@@ -1,5 +1,94 @@
 
 
+/* NAV BAR */
+
+/* #nav-container {
+    padding: 20px;
+}
+
+.nav-item {
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 22px;
+} */
+
+/* NAV BAR */
+#nav-container {
+    padding: 20px;
+    height: 100%;
+    width: auto;
+    /* position: fixed; */
+    /* display: inline-block; */
+    z-index: 1;
+    top: 0;
+    right: 0; 
+    /* background-color: rgb(235, 157, 13); */
+    overflow-x: hidden;
+    position: fixed; 
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+}
+
+.nav-item {
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 22px;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+}
+
+.name {
+    color: #25faa8;
+    text-decoration: none;
+}
+
+.name:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#title {
+  font-size: 40px;  
+}
+
+button {
+    height: 100px;
+    width: auto;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background: white;
+  }
+
+button:hover {
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* LANDING SECTION */
+
+#landing-section {
+    /* background: yellow; */
+    height: 100%;
+    padding-top: 15%;
+    margin-bottom: 0;
+    /* padding-left: 20%;
+    padding-right: 20%; */
+}
+
+.about-me {
+    /* background-color: salmon; */
+    text-align: left;
+    font-size: 27px;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+
+}
 
 
 
@@ -8,22 +97,71 @@
 
 
 
+/* FOOTER */
+footer {
+    /* background-color: rgb(218, 28, 192); */
+    /* background-color: #25faa8; */
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    bottom: 0;
+    /* position: fixed;  */
+    width: 100%;
+}
 
+#social-container {
+    display: flex;
+    flex-direction: row;
+    /* background-color: mediumslateblue; */
+}
 
+.linkedin {
+    /* background-color: orange; */
+    width: 30%;
+    /* height: 20%; */
+    padding: 5px;
+    margin: 0;
+}
+
+.github {
+    /* background-color: palegreen; */
+    width: 30%;
+    /* height: 20%; */
+    padding: 5px;
+}
+
+.resume{
+    /* background-color: rgb(32, 19, 143); */
+    width: 30%;
+    /* height: 20%; */
+    padding: 5px;
+}
+
+.empty-column {
+    /* background-color: white; */
+    width: 5%;
+    height: 50%;
+}
 
 
 
 
 
 /* CONTACT SECTION */
-
 #contact-section {
     height: 100%;
     /* background: lightblue; */
 }
 
+/* #contact-container {
+    height: 100vh;
+    width: auto;
+    background: white;
+    margin: 10%;
+} */
+
 #contact-form {
-    /* background-color: rgb(190, 145, 21); */
+    background-color: white;
     margin: 30px;
     padding: 70px;
     border: solid 4px black;
