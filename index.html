@@ -100,28 +100,34 @@
 <section id="about">
     <div class="row">
         <div class="col-md-3">
-            <h1 class="about-header">skills</h1>
+          <h3 class="collapsible"> skills</h3>
+            <div class="content">
+                <p>HTML5/CSS</p>
+                <p>JavaScript</p>
+                <p>C#</p>
+            </div>
+            <!-- <h1 class="about-header">skills</h1>
             <p>HTML5/CSS</p>
             <p>JavaScript</p>
-            <p>C#</p>
+            <p>C#</p> -->
           </div>
           <div class="col-md-3">
-            <h1 class="about-header">education</h1>
             <div>
-              <p>
-                Eleven Fifty Academy - Indianapolis, IN</p>
-              <!-- <p>Journalism at Northwestern University - Evanston, IL
-                </p>
-              <p>History and Art History at University of Michigan - Ann Arbor, MI
-                </p>     -->
+              <h3 class="collapsible">education</h3>
+                <div class="content">
+                    <div>
+                      <p>Eleven Fifty Academy - Indianapolis, IN</p>
+                    </div>    
+                </div>
             </div>
           </div>
           <div class="col-md-3">
-            <h1 class="about-header">work</h1>
-            <p>Copywriter & Editor at Community Health Network</p>
-            <p>Communications & Development Coordinator at LifeSmart Youth</p>
-            <div class="resume"><a href="./assets/B Magee Resume.pdf" target="blank" download="">download resume</a></div>
-            <!-- <p>Writer & Marketing Associate at GLC — a marketing communications agency</p> -->
+            <h3 class="collapsible">work</h3>
+              <div class="content">
+                  <p>Copywriter & Editor at Community Health Network</p>
+                  <p>Communications & Development Coordinator at LifeSmart Youth</p>
+                  <div class="resume"><a href="./assets/B Magee Resume.pdf" target="blank" download="">download resume</a></div>
+              </div>
           </div>
     </div>
 </section>
@@ -180,6 +186,23 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
 
 </body>
 </html>
