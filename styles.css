@@ -51,7 +51,8 @@ h2 {
 }
 
 .name:hover {
-    color: #25faa8;
+    /* color: #25faa8; */
+    color: #0062ff;
     text-decoration: none;
 }
 
@@ -66,20 +67,9 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     padding: 4px;
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 2px;
     background: white;
   }
-
-/* .buttoncollapsible {
-    height: 100px;
-    width: 100px;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 4px;
-    border: 3px solid black;
-    border-radius: 5px;
-    background: white;
-} */
 
 button:hover {
     box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
@@ -101,9 +91,10 @@ button:hover {
     width: auto;
 }
 
-/* #hello {
-    text-decoration: overline;
-} */
+#hello {
+  color: #0062ff;
+}
+
 .about-me {
     /* background-color: salmon; */
     text-align: left;
@@ -120,9 +111,9 @@ button:hover {
     margin-left: 2%;
     margin-right: 2%;
 }
-.col-md-5 {
-    /* background-color: chartreuse;
-    border: solid 4px black; */
+/* .col-md-5 {
+    background-color: chartreuse;
+    border: solid 4px black;
     padding: 10px;
     margin: 7px;
 }
@@ -131,7 +122,7 @@ button:hover {
     background-color: black;
     font-size: 40px;
     padding: 14px;
-}
+} */
 
 .col-md-4 {
     /* background-color: chartreuse; */
@@ -142,7 +133,8 @@ button:hover {
 
 .col-md-4:hover {
     background-color: black;
-    font-size: 37px;
+    font-size: 32px;
+    color: whitesmoke;
     padding: 14px;
 }
 
@@ -173,10 +165,45 @@ h3:hover {
   /* box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2); */
   /* text-decoration: line-through;
   text-decoration: overline; */
-  color: aqua;
+  color: #25faa8;
   text-decoration: overline; 
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 /* FOOTER */
 footer {
